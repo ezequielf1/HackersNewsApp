@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "51112124-F0B7-46CC-B7EE-9057021AFC10"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "73C31046-B257-4937-94EE-0B42E26F430E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HackerNewsApp/Networking/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "doRequest(_:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0AB14331-9E24-4583-BC31-2A7A5AFA8A47"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HackerNewsApp/Networking/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "doRequest(_:_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0AB14331-9E24-4583-BC31-2A7A5AFA8A47 - baaf18231e43727c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HackerNewsApp.NetworkManagerImplementation.doRequest&lt;A where A: Swift.Decodable, A: Swift.Encodable&gt;(HackerNewsApp.APIRequest, (HackerNewsApp.APIResult&lt;A&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "HackerNewsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brian.fritz/Desktop/HackersNewsApp/HackerNewsApp/Networking/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "525">
+               </Location>
+               <Location
+                  uuid = "0AB14331-9E24-4583-BC31-2A7A5AFA8A47 - fb4d68ca47b21417"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in HackerNewsApp.NetworkManagerImplementation.doRequest&lt;A where A: Swift.Decodable, A: Swift.Encodable&gt;(HackerNewsApp.APIRequest, (HackerNewsApp.APIResult&lt;A&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "HackerNewsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brian.fritz/Desktop/HackersNewsApp/HackerNewsApp/Networking/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "272">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2FB1BB4C-F29F-43A0-9DA6-066458875160"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HackerNewsApp/Networking/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "doRequest(_:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
