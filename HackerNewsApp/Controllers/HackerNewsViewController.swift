@@ -17,26 +17,53 @@ final class HackerNewsViewController: UIViewController {
         }
     }
     
-    var viewModel: HackerNewsViewModel? = .init(service: HackerNewsService())
+    // MARK: - Private Properties
+    private lazy var refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(fetchHackerNews), for: .valueChanged)
+        return refreshControl
+    }()
     
     private var hackerNews: [HackerNew] = []
     
+    // MARK: - Public Properties
+    var viewModel: HackerNewsViewModel?
+    
+    // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel?.fetchHackerNews()
-        setupBinds()
+        start()
     }
 }
 
 // MARK: - Private Methods
 private extension HackerNewsViewController {
+    func start() {
+        setupView()
+        fetchHackerNews()
+    }
+    
+    func setupView() {
+        setupBinds()
+        tableView.refreshControl = refreshControl
+    }
+    
     func setupBinds() {
         viewModel?.hackerNews.bind({ hackerNews in
             self.hackerNews = hackerNews
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
+            self.updateView()
         })
+    }
+    
+    func updateView() {
+        DispatchQueue.main.async {
+            self.refreshControl.endRefreshing()
+            self.tableView.reloadData()
+        }
+    }
+    
+    @objc func fetchHackerNews() {
+        viewModel?.fetchHackerNews()
     }
 }
 
@@ -58,6 +85,4 @@ extension HackerNewsViewController: UITableViewDataSource {
         cell.model = hackerNews[indexPath.row]
         return cell
     }
-    
-    
 }
