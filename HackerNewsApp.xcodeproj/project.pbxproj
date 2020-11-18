@@ -99,6 +99,15 @@
 		2ABC68982565936100754BDD /* HackerNewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				2ABC68D7256594F700754BDD /* Models */,
+				2ABC68D6256594F000754BDD /* Extensions */,
+				2ABC68D5256594E900754BDD /* Networking */,
+				2ABC68D4256594E200754BDD /* Controllers */,
+				2ABC68D3256594DE00754BDD /* Views */,
+				2ABC68D2256594D800754BDD /* ViewModels */,
+				2ABC68D1256594D400754BDD /* Coordinators */,
+				2ABC68D0256594D000754BDD /* Utils */,
+				2ABC68CF256594C900754BDD /* Services */,
 				2ABC68992565936100754BDD /* AppDelegate.swift */,
 				2ABC689B2565936100754BDD /* SceneDelegate.swift */,
 				2ABC689D2565936100754BDD /* ViewController.swift */,
@@ -126,6 +135,69 @@
 				2ABC68BD2565936200754BDD /* Info.plist */,
 			);
 			path = HackerNewsAppUITests;
+			sourceTree = "<group>";
+		};
+		2ABC68CF256594C900754BDD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2ABC68D0256594D000754BDD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2ABC68D1256594D400754BDD /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		2ABC68D2256594D800754BDD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2ABC68D3256594DE00754BDD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2ABC68D4256594E200754BDD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2ABC68D5256594E900754BDD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		2ABC68D6256594F000754BDD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2ABC68D7256594F700754BDD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
