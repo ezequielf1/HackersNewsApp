@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2ABC689A2565936100754BDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC68992565936100754BDD /* AppDelegate.swift */; };
 		2ABC689C2565936100754BDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC689B2565936100754BDD /* SceneDelegate.swift */; };
-		2ABC689E2565936100754BDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC689D2565936100754BDD /* ViewController.swift */; };
 		2ABC68A12565936100754BDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ABC689F2565936100754BDD /* Main.storyboard */; };
 		2ABC68A32565936100754BDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ABC68A22565936100754BDD /* Assets.xcassets */; };
 		2ABC68A62565936100754BDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ABC68A42565936100754BDD /* LaunchScreen.storyboard */; };
@@ -27,6 +26,14 @@
 		2ABC69112565B4D600754BDD /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC69102565B4D600754BDD /* URLRequestBuilder.swift */; };
 		2ABC691E2565D1CA00754BDD /* APIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC691D2565D1CA00754BDD /* APIRequests.swift */; };
 		2ABC69222565D2F800754BDD /* HackerNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC69212565D2F800754BDD /* HackerNews.swift */; };
+		2ABC69282565D51400754BDD /* HackerNewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC69272565D51400754BDD /* HackerNewsService.swift */; };
+		2ABC69372565D67B00754BDD /* HackerNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC69362565D67B00754BDD /* HackerNewsViewController.swift */; };
+		2ABC693B2565D71000754BDD /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC693A2565D71000754BDD /* UITableView+Extensions.swift */; };
+		2ABC693F2565D73700754BDD /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC693E2565D73700754BDD /* UIViewController+Extensions.swift */; };
+		2ABC694A2565D78500754BDD /* HackerNewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC69492565D78500754BDD /* HackerNewTableViewCell.swift */; };
+		2ABC694F2565D7B100754BDD /* HackerNewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ABC694E2565D7B100754BDD /* HackerNewTableViewCell.xib */; };
+		2ABC69542565DAB100754BDD /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC69532565DAB100754BDD /* Dynamic.swift */; };
+		2ABC695A2565DAD100754BDD /* HackerNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC69592565DAD100754BDD /* HackerNewsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +50,6 @@
 		2ABC68962565936100754BDD /* HackerNewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerNewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ABC68992565936100754BDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2ABC689B2565936100754BDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2ABC689D2565936100754BDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2ABC68A02565936100754BDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2ABC68A22565936100754BDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ABC68A52565936100754BDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,6 +70,14 @@
 		2ABC69102565B4D600754BDD /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
 		2ABC691D2565D1CA00754BDD /* APIRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequests.swift; sourceTree = "<group>"; };
 		2ABC69212565D2F800754BDD /* HackerNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNews.swift; sourceTree = "<group>"; };
+		2ABC69272565D51400754BDD /* HackerNewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsService.swift; sourceTree = "<group>"; };
+		2ABC69362565D67B00754BDD /* HackerNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsViewController.swift; sourceTree = "<group>"; };
+		2ABC693A2565D71000754BDD /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		2ABC693E2565D73700754BDD /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		2ABC69492565D78500754BDD /* HackerNewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewTableViewCell.swift; sourceTree = "<group>"; };
+		2ABC694E2565D7B100754BDD /* HackerNewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HackerNewTableViewCell.xib; sourceTree = "<group>"; };
+		2ABC69532565DAB100754BDD /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		2ABC69592565DAD100754BDD /* HackerNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +130,6 @@
 				2ABC68CF256594C900754BDD /* Services */,
 				2ABC68992565936100754BDD /* AppDelegate.swift */,
 				2ABC689B2565936100754BDD /* SceneDelegate.swift */,
-				2ABC689D2565936100754BDD /* ViewController.swift */,
 				2ABC689F2565936100754BDD /* Main.storyboard */,
 				2ABC68A22565936100754BDD /* Assets.xcassets */,
 				2ABC68A42565936100754BDD /* LaunchScreen.storyboard */,
@@ -138,6 +151,7 @@
 		2ABC68CF256594C900754BDD /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				2ABC69272565D51400754BDD /* HackerNewsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -145,6 +159,7 @@
 		2ABC68D0256594D000754BDD /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2ABC69532565DAB100754BDD /* Dynamic.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -159,6 +174,7 @@
 		2ABC68D2256594D800754BDD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				2ABC69592565DAD100754BDD /* HackerNewsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -166,6 +182,7 @@
 		2ABC68D3256594DE00754BDD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2ABC694D2565D7A300754BDD /* Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +190,8 @@
 		2ABC68D4256594E200754BDD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2ABC69422565D76700754BDD /* Cells */,
+				2ABC69362565D67B00754BDD /* HackerNewsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -196,6 +215,8 @@
 		2ABC68D6256594F000754BDD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2ABC693A2565D71000754BDD /* UITableView+Extensions.swift */,
+				2ABC693E2565D73700754BDD /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -232,6 +253,22 @@
 				2ABC69102565B4D600754BDD /* URLRequestBuilder.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		2ABC69422565D76700754BDD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2ABC69492565D78500754BDD /* HackerNewTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2ABC694D2565D7A300754BDD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2ABC694E2565D7B100754BDD /* HackerNewTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +353,7 @@
 			files = (
 				2ABC68A62565936100754BDD /* LaunchScreen.storyboard in Resources */,
 				2ABC68A32565936100754BDD /* Assets.xcassets in Resources */,
+				2ABC694F2565D7B100754BDD /* HackerNewTableViewCell.xib in Resources */,
 				2ABC68A12565936100754BDD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,18 +374,24 @@
 			files = (
 				2ABC68E72565B41800754BDD /* NetworkManager.swift in Sources */,
 				2ABC69062565B49200754BDD /* APIResult.swift in Sources */,
-				2ABC689E2565936100754BDD /* ViewController.swift in Sources */,
+				2ABC69372565D67B00754BDD /* HackerNewsViewController.swift in Sources */,
+				2ABC693B2565D71000754BDD /* UITableView+Extensions.swift in Sources */,
 				2ABC691E2565D1CA00754BDD /* APIRequests.swift in Sources */,
+				2ABC693F2565D73700754BDD /* UIViewController+Extensions.swift in Sources */,
 				2ABC69222565D2F800754BDD /* HackerNews.swift in Sources */,
 				2ABC68F22565B44800754BDD /* HTTPMethod.swift in Sources */,
 				2ABC689A2565936100754BDD /* AppDelegate.swift in Sources */,
 				2ABC69112565B4D600754BDD /* URLRequestBuilder.swift in Sources */,
+				2ABC694A2565D78500754BDD /* HackerNewTableViewCell.swift in Sources */,
+				2ABC69542565DAB100754BDD /* Dynamic.swift in Sources */,
+				2ABC69282565D51400754BDD /* HackerNewsService.swift in Sources */,
 				2ABC689C2565936100754BDD /* SceneDelegate.swift in Sources */,
 				2ABC68F72565B45900754BDD /* HTTPHeader.swift in Sources */,
 				2ABC68FC2565B46900754BDD /* APIRequest.swift in Sources */,
 				2ABC68EC2565B42C00754BDD /* NetworkRequest.swift in Sources */,
 				2ABC690B2565B49C00754BDD /* NetworkError.swift in Sources */,
 				2ABC69012565B48100754BDD /* APIError.swift in Sources */,
+				2ABC695A2565DAD100754BDD /* HackerNewsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
