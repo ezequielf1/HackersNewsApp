@@ -15,7 +15,6 @@ struct HackerNew: Codable {
     let author: String?
     let url: String?
     let storyTitle: String?
-    let commentText: String?
     
     enum CodingKeys: String, CodingKey {
         case createdAt = "created_at"
@@ -23,7 +22,6 @@ struct HackerNew: Codable {
         case author
         case url
         case storyTitle = "story_title"
-        case commentText = "comment_text"
         
     }
 }
