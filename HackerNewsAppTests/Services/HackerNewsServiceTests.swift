@@ -10,7 +10,7 @@ import XCTest
 @testable import HackerNewsApp
 
 class HackerNewsServiceTests: XCTestCase {
-    private var service: HackerNewsService!
+    private var service: HackerNewsServiceImplementation!
     private let networkManager = NetworkManagerMock<HackerNewsDTO>()
     private var response: [HackerNewDTO] = []
     private let cacheManager = CacheManagerMock<[HackerNewDTO]>()
@@ -22,7 +22,7 @@ class HackerNewsServiceTests: XCTestCase {
     private var expect: XCTestExpectation!
     
     override func setUp() {
-        service = HackerNewsService(networkManager: networkManager, cacheManager: cacheManager)
+        service = HackerNewsServiceImplementation(networkManager: networkManager, cacheManager: cacheManager)
     }
     
 

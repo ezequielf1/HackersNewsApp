@@ -15,7 +15,7 @@ final class HackerNewsCoordinator: BaseCoordinator {
 // MARK: - Private Methods
 private extension HackerNewsCoordinator {
     func buildHackerNewsFlow(viewController: HackerNewsViewController) {
-        let hackerNewsViewModel = HackerNewsViewModel(service: HackerNewsService())
+        let hackerNewsViewModel = HackerNewsViewModel(service: HackerNewsServiceImplementation())
         hackerNewsViewModel.delegate = self
         viewController.viewModel = hackerNewsViewModel
     }
