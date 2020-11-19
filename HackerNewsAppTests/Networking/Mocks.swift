@@ -65,3 +65,35 @@ struct MockResponse: Codable, Equatable {
     let mockSecondProperty: String
 }
 
+final class NetworkManagerMock<T: Codable>: NetworkManager {
+    var response: APIResult<T>?
+    var timesCalled = 0
+    
+    func doRequest<T>(_ request: APIRequest,
+                      _ completion: @escaping APIClientCompletion<T>) where T : Decodable, T : Encodable {
+        timesCalled += 1
+        switch response {
+        case .success(let value):
+            completion(.success(value as? T))
+        case .failure(let error):
+            completion(.failure(error))
+        default:
+            completion(.success(nil))
+        }
+    }
+}
+
+final class CacheManagerMock<T: Codable>: MemoryCacheManager<T> {
+    var timesCalled = 0
+    var dictionary: [String: T] = [:]
+    
+    override func get(key: String) -> T? {
+        timesCalled += 1
+        return dictionary[key]
+    }
+    
+    override func put(key: String, value: T) {
+        dictionary[key] = value
+    }
+}
+
