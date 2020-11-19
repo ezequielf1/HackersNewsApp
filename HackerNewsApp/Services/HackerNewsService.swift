@@ -8,7 +8,7 @@
 import Foundation
 
 final class HackerNewsService {
-    typealias Model = [HackerNew]
+    typealias Model = [HackerNewDTO]
     private let networkManager: NetworkManager
     private let cacheManager: MemoryCacheManager<Model>
     private let lastHackerNewsKey = "last_hacker_news"
@@ -22,7 +22,7 @@ final class HackerNewsService {
     func fetchHackerNews(completionHandler: @escaping (Model) -> Void) {
         let request = APIRequest(request: HackerNewsRequest())
         request.queryItems = [URLQueryItem(name: "query", value: "ios")]
-        networkManager.doRequest(request) { [weak self] (result: APIResult<HackerNews>) in
+        networkManager.doRequest(request) { [weak self] (result: APIResult<HackerNewsDTO>) in
             guard let self = self else { return }
             switch result {
             case .success(let hackerNews):

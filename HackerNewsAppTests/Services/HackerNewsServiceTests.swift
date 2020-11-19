@@ -11,13 +11,13 @@ import XCTest
 
 class HackerNewsServiceTests: XCTestCase {
     private var service: HackerNewsService!
-    private let networkManager = NetworkManagerMock<HackerNews>()
-    private var response: [HackerNew] = []
-    private let cacheManager = CacheManagerMock<[HackerNew]>()
-    private let successResponse: APIResult = .success(HackerNews(hits: [HackerNew(createdAt: "createdAt",
+    private let networkManager = NetworkManagerMock<HackerNewsDTO>()
+    private var response: [HackerNewDTO] = []
+    private let cacheManager = CacheManagerMock<[HackerNewDTO]>()
+    private let successResponse: APIResult = .success(HackerNewsDTO(hits: [HackerNewDTO(createdAt: "createdAt",
                                                                                   title: "title",
                                                                                   author: "author",
-                                                                                  url: "url",
+                                                                                  storyUrl: "url",
                                                                                   storyTitle: "storyTitle")]))
     private var expect: XCTestExpectation!
     

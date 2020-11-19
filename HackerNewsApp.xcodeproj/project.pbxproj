@@ -14,6 +14,13 @@
 		2A7F872F2566AF7000C49AFF /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F872E2566AF7000C49AFF /* Storyboarded.swift */; };
 		2A7F87332566AF8000C49AFF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F87322566AF8000C49AFF /* Coordinator.swift */; };
 		2A7F87372566B24E00C49AFF /* HackerNewsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F87362566B24E00C49AFF /* HackerNewsCoordinator.swift */; };
+		2A7F873D2566BCFC00C49AFF /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F873C2566BCFC00C49AFF /* WebViewController.swift */; };
+		2A7F87412566BD3700C49AFF /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A7F87402566BD3700C49AFF /* WebViewController.xib */; };
+		2A7F87452566C10500C49AFF /* WebViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F87442566C10500C49AFF /* WebViewCoordinator.swift */; };
+		2A7F8B872566F24A00C49AFF /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F8B862566F24A00C49AFF /* DateFormatter+Extensions.swift */; };
+		2A7F8B8B2566F26600C49AFF /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F8B8A2566F26600C49AFF /* Date+Extensions.swift */; };
+		2A7F8B902566F53200C49AFF /* HackerNewsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F8B8F2566F53200C49AFF /* HackerNewsDTO.swift */; };
+		2A7F8B982566F56E00C49AFF /* HackerNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F8B972566F56E00C49AFF /* HackerNew.swift */; };
 		2ABC689A2565936100754BDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC68992565936100754BDD /* AppDelegate.swift */; };
 		2ABC689C2565936100754BDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC689B2565936100754BDD /* SceneDelegate.swift */; };
 		2ABC68A12565936100754BDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ABC689F2565936100754BDD /* Main.storyboard */; };
@@ -32,7 +39,6 @@
 		2ABC690B2565B49C00754BDD /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC690A2565B49C00754BDD /* NetworkError.swift */; };
 		2ABC69112565B4D600754BDD /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC69102565B4D600754BDD /* URLRequestBuilder.swift */; };
 		2ABC691E2565D1CA00754BDD /* APIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC691D2565D1CA00754BDD /* APIRequests.swift */; };
-		2ABC69222565D2F800754BDD /* HackerNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC69212565D2F800754BDD /* HackerNews.swift */; };
 		2ABC69282565D51400754BDD /* HackerNewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC69272565D51400754BDD /* HackerNewsService.swift */; };
 		2ABC69372565D67B00754BDD /* HackerNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC69362565D67B00754BDD /* HackerNewsViewController.swift */; };
 		2ABC693B2565D71000754BDD /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC693A2565D71000754BDD /* UITableView+Extensions.swift */; };
@@ -61,6 +67,13 @@
 		2A7F872E2566AF7000C49AFF /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		2A7F87322566AF8000C49AFF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		2A7F87362566B24E00C49AFF /* HackerNewsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsCoordinator.swift; sourceTree = "<group>"; };
+		2A7F873C2566BCFC00C49AFF /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		2A7F87402566BD3700C49AFF /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		2A7F87442566C10500C49AFF /* WebViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewCoordinator.swift; sourceTree = "<group>"; };
+		2A7F8B862566F24A00C49AFF /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		2A7F8B8A2566F26600C49AFF /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		2A7F8B8F2566F53200C49AFF /* HackerNewsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsDTO.swift; sourceTree = "<group>"; };
+		2A7F8B972566F56E00C49AFF /* HackerNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNew.swift; sourceTree = "<group>"; };
 		2ABC68962565936100754BDD /* HackerNewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerNewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ABC68992565936100754BDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2ABC689B2565936100754BDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,7 +96,6 @@
 		2ABC690A2565B49C00754BDD /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		2ABC69102565B4D600754BDD /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
 		2ABC691D2565D1CA00754BDD /* APIRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequests.swift; sourceTree = "<group>"; };
-		2ABC69212565D2F800754BDD /* HackerNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNews.swift; sourceTree = "<group>"; };
 		2ABC69272565D51400754BDD /* HackerNewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsService.swift; sourceTree = "<group>"; };
 		2ABC69362565D67B00754BDD /* HackerNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsViewController.swift; sourceTree = "<group>"; };
 		2ABC693A2565D71000754BDD /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
@@ -127,6 +139,14 @@
 				2A7F87322566AF8000C49AFF /* Coordinator.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2A7F8B8E2566F52800C49AFF /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				2A7F8B8F2566F53200C49AFF /* HackerNewsDTO.swift */,
+			);
+			path = DTOs;
 			sourceTree = "<group>";
 		};
 		2ABC688D2565936100754BDD = {
@@ -204,6 +224,7 @@
 				2A7F87252566AF1700C49AFF /* BaseCoordinator.swift */,
 				2A7F87292566AF1F00C49AFF /* AppCoordinator.swift */,
 				2A7F87362566B24E00C49AFF /* HackerNewsCoordinator.swift */,
+				2A7F87442566C10500C49AFF /* WebViewCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -220,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				2ABC694D2565D7A300754BDD /* Cells */,
+				2A7F87402566BD3700C49AFF /* WebViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,6 +251,7 @@
 			children = (
 				2ABC69422565D76700754BDD /* Cells */,
 				2ABC69362565D67B00754BDD /* HackerNewsViewController.swift */,
+				2A7F873C2566BCFC00C49AFF /* WebViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -254,6 +277,8 @@
 			children = (
 				2ABC693A2565D71000754BDD /* UITableView+Extensions.swift */,
 				2ABC693E2565D73700754BDD /* UIViewController+Extensions.swift */,
+				2A7F8B862566F24A00C49AFF /* DateFormatter+Extensions.swift */,
+				2A7F8B8A2566F26600C49AFF /* Date+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -261,7 +286,8 @@
 		2ABC68D7256594F700754BDD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2ABC69212565D2F800754BDD /* HackerNews.swift */,
+				2A7F8B8E2566F52800C49AFF /* DTOs */,
+				2A7F8B972566F56E00C49AFF /* HackerNew.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -391,6 +417,7 @@
 				2ABC68A62565936100754BDD /* LaunchScreen.storyboard in Resources */,
 				2ABC68A32565936100754BDD /* Assets.xcassets in Resources */,
 				2ABC694F2565D7B100754BDD /* HackerNewTableViewCell.xib in Resources */,
+				2A7F87412566BD3700C49AFF /* WebViewController.xib in Resources */,
 				2ABC68A12565936100754BDD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,17 +437,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ABC68E72565B41800754BDD /* NetworkManager.swift in Sources */,
+				2A7F873D2566BCFC00C49AFF /* WebViewController.swift in Sources */,
 				2ABC69062565B49200754BDD /* APIResult.swift in Sources */,
 				2ABC69372565D67B00754BDD /* HackerNewsViewController.swift in Sources */,
 				2ABC693B2565D71000754BDD /* UITableView+Extensions.swift in Sources */,
+				2A7F8B982566F56E00C49AFF /* HackerNew.swift in Sources */,
 				2ABC691E2565D1CA00754BDD /* APIRequests.swift in Sources */,
+				2A7F8B902566F53200C49AFF /* HackerNewsDTO.swift in Sources */,
 				2ABC693F2565D73700754BDD /* UIViewController+Extensions.swift in Sources */,
 				2A7F872A2566AF1F00C49AFF /* AppCoordinator.swift in Sources */,
-				2ABC69222565D2F800754BDD /* HackerNews.swift in Sources */,
+				2A7F87452566C10500C49AFF /* WebViewCoordinator.swift in Sources */,
 				2ABC68F22565B44800754BDD /* HTTPMethod.swift in Sources */,
 				2ABC689A2565936100754BDD /* AppDelegate.swift in Sources */,
 				2A7F87262566AF1700C49AFF /* BaseCoordinator.swift in Sources */,
 				2ABC69112565B4D600754BDD /* URLRequestBuilder.swift in Sources */,
+				2A7F8B872566F24A00C49AFF /* DateFormatter+Extensions.swift in Sources */,
 				2ABC694A2565D78500754BDD /* HackerNewTableViewCell.swift in Sources */,
 				2ABC69542565DAB100754BDD /* Dynamic.swift in Sources */,
 				2ABC69282565D51400754BDD /* HackerNewsService.swift in Sources */,
@@ -429,6 +460,7 @@
 				2ABC68F72565B45900754BDD /* HTTPHeader.swift in Sources */,
 				2ABC68FC2565B46900754BDD /* APIRequest.swift in Sources */,
 				2ABC68EC2565B42C00754BDD /* NetworkRequest.swift in Sources */,
+				2A7F8B8B2566F26600C49AFF /* Date+Extensions.swift in Sources */,
 				2ABC690B2565B49C00754BDD /* NetworkError.swift in Sources */,
 				2ABC69012565B48100754BDD /* APIError.swift in Sources */,
 				2A7F87332566AF8000C49AFF /* Coordinator.swift in Sources */,

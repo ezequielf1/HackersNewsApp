@@ -29,7 +29,10 @@ extension HackerNewsViewModel {
     func fetchHackerNews() {
         service.fetchHackerNews { [weak self] result in
             guard let self = self else { return }
-            self.hackerNews.value = self.getHackerNewsWithoutDeletedOnes(hackerNews: result)
+            let mappedHackedNews = result
+                .sorted(by: { $0.createdAt ?? "" < $1.createdAt ?? "" })
+                .map { HackerNew(from: $0) }
+            self.hackerNews.value = self.getHackerNewsWithoutDeletedOnes(hackerNews: mappedHackedNews)
         }
     }
     
