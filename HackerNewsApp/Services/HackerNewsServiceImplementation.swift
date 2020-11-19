@@ -7,19 +7,22 @@
 
 import Foundation
 
-final class HackerNewsService {
-    typealias Model = [HackerNewDTO]
+protocol HackerNewsService {
+    func fetchHackerNews(completionHandler: @escaping ([HackerNewDTO]) -> Void)
+}
+
+final class HackerNewsServiceImplementation: HackerNewsService {
     private let networkManager: NetworkManager
-    private let cacheManager: MemoryCacheManager<Model>
+    private let cacheManager: MemoryCacheManager<[HackerNewDTO]>
     private let lastHackerNewsKey = "last_hacker_news"
     
     init(networkManager: NetworkManager = NetworkManagerImplementation.shared,
-         cacheManager: MemoryCacheManager<Model> = .init()) {
+         cacheManager: MemoryCacheManager<[HackerNewDTO]> = .init()) {
         self.networkManager = networkManager
         self.cacheManager = cacheManager
     }
     
-    func fetchHackerNews(completionHandler: @escaping (Model) -> Void) {
+    func fetchHackerNews(completionHandler: @escaping ([HackerNewDTO]) -> Void) {
         let request = APIRequest(request: HackerNewsRequest())
         request.queryItems = [URLQueryItem(name: "query", value: "ios")]
         networkManager.doRequest(request) { [weak self] (result: APIResult<HackerNewsDTO>) in

@@ -97,3 +97,12 @@ final class CacheManagerMock<T: Codable>: MemoryCacheManager<T> {
     }
 }
 
+final class HackerNewsServiceMock: HackerNewsService {
+    var fetchHackerNewsTimeCalled = 0
+    var response: [HackerNewDTO]!
+    
+    func fetchHackerNews(completionHandler: @escaping ([HackerNewDTO]) -> Void) {
+        fetchHackerNewsTimeCalled += 1
+        completionHandler(response)
+    }
+}
