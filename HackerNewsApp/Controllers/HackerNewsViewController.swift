@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class HackerNewsViewController: UIViewController {
+final class HackerNewsViewController: UIViewController, Storyboarded {
     // MARK: - IBOutlets
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
@@ -27,7 +27,7 @@ final class HackerNewsViewController: UIViewController {
     private var hackerNews: [HackerNew] = []
     
     // MARK: - Public Properties
-    var viewModel: HackerNewsViewModel? = .init(service: HackerNewsService())
+    var viewModel: HackerNewsViewModel?
     
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
@@ -65,11 +65,27 @@ private extension HackerNewsViewController {
     @objc func fetchHackerNews() {
         viewModel?.fetchHackerNews()
     }
+    
+    func deleteRow(at indexPath: IndexPath) {
+        tableView.beginUpdates()
+        hackerNews.remove(at: indexPath.row)
+        tableView.deleteRows(at: [indexPath], with: .right)
+        tableView.endUpdates()
+    }
 }
 
 // MARK: - UITableViewDelegate
 extension HackerNewsViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete) {
+            viewModel?.hackerNewWasDeleted(hackerNews[indexPath.row])
+            deleteRow(at: indexPath)
+        }
+    }
 }
 
 // MARK: - UITableViewDataSource
