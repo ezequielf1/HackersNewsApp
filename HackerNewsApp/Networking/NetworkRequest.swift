@@ -15,7 +15,7 @@ protocol NetworkRequest {
 
 extension NetworkRequest {
     var baseURL: URL? {
-        get { URL(string: "https://hn.algolia.com?query=ios&page=3") }
+        get { URL(string: "https://hn.algolia.com") }
         set {}
     }
 }

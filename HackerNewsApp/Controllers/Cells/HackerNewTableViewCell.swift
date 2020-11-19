@@ -15,9 +15,9 @@ final class HackerNewTableViewCell: UITableViewCell {
     // MARK: - Public Properties
     var model: HackerNew? {
         didSet {
-            titleLabel.text = model?.storyTitle ?? model?.title ?? ""
+            titleLabel.text = model?.title
             if let author = model?.author {
-                extraDataLabel.text = author + " - " + (model?.createdAt ?? "")
+                extraDataLabel.text = author + " - " + (model?.createdTimeAgo ?? "")
             }
         }
     }

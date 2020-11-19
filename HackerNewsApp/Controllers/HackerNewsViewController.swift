@@ -86,6 +86,10 @@ extension HackerNewsViewController: UITableViewDelegate {
             deleteRow(at: indexPath)
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel?.didTapHackerNew(hackerNew: hackerNews[indexPath.row])
+    }
 }
 
 // MARK: - UITableViewDataSource

@@ -4,7 +4,6 @@
 //
 //  Created by Brian Ezequiel Fritz on 19/11/2020.
 //
-
 final class HackerNewsCoordinator: BaseCoordinator {
     override func start() {
         let viewController = HackerNewsViewController.instantiate()
@@ -25,6 +24,8 @@ private extension HackerNewsCoordinator {
 // MARK: - HackerNewsDelegate
 extension HackerNewsCoordinator: HackerNewsDelegate {
     func didTapHackerNew(hackerNew: HackerNew) {
-        
+        let webViewCoordinator = WebViewCoordinator(hackerNew: hackerNew)
+        webViewCoordinator.navigationController = navigationController
+        start(coordinator: webViewCoordinator)
     }
 }
