@@ -23,14 +23,7 @@ extension HackerNewsViewModel {
     func fetchHackerNews() {
         service.fetchHackerNews { [weak self] result in
             guard let self = self else { return }
-            switch result {
-            case .success(let hackerNews):
-                if let hackerNews = hackerNews?.hits {
-                    self.hackerNews.value = hackerNews
-                }
-            case .failure(let error):
-                self.error.value = error
-            }
+            self.hackerNews.value = result
         }
     }
 }

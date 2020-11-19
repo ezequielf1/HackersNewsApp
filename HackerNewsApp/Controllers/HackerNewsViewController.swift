@@ -27,7 +27,7 @@ final class HackerNewsViewController: UIViewController {
     private var hackerNews: [HackerNew] = []
     
     // MARK: - Public Properties
-    var viewModel: HackerNewsViewModel?
+    var viewModel: HackerNewsViewModel? = .init(service: HackerNewsService())
     
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
